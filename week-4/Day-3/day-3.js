@@ -11,11 +11,11 @@ const num2 = document.querySelector("#num2");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  let x = num1.value;
-  let y = num2.value;
+  let x = num1.innerHTML;
+  let y = num2.innerHTML;
 
   if (e.submitter.id == "multiply") {
-    alert(answer.value) = parseInt(x) * parseInt(y);
+    alert(answer.innerHTML) = x * y;
   }
 });
 
